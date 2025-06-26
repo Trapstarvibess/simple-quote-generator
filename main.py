@@ -7,7 +7,7 @@ def get_random_quote(filename="quotes.txt"):
     """
     try:
         with open(filename, "r", encoding="utf-8") as f:
-            quotes = [line.strip() for line in f if line.strip()] # Read lines, strip whitespace, ignore empty lines
+            quotes = [line.strip() for line in f if line.strip()] 
         if not quotes:
             return "No quotes found in the file. Add some!"
         return random.choice(quotes)
@@ -17,6 +17,6 @@ def get_random_quote(filename="quotes.txt"):
         return f"An error occurred: {e}"
 
 if __name__ == "__main__":
-    print("--- Your Daily Dose of Inspiration ---")
+    print("--- Your Daily Dose of Inspiration Today is: ---")
     print(get_random_quote())
     print("-------------------------------------")
