@@ -1,0 +1,14 @@
+# Python specific ignores
+*.pyc
+__pycache__/
+.Python
+env/
+venv/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific files
+.idea/
+.vscode/
